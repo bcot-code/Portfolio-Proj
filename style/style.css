@@ -1,3 +1,7 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #272142;
+}
 .caption {
   position: absolute;
   width: 506px;
@@ -13,7 +17,7 @@ h1 {
   font-weight: 700;
   font-size: 64px;
   line-height: 85px;
-  color: #272142;
+  color: var(--primary-color);
 }
 h3 {
   font-family: "Ubuntu";
@@ -22,5 +26,13 @@ h3 {
   font-weight: 700;
   position: absolute;
   line-height: 50px;
-  color: #272142;
+  color: var(--primary-color);
+}
+#style-1 {
+  position: absolute;
+  right: calc(40% - 450px / 2 - 342.5px);
+  top: 800px;
+}
+#style:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }

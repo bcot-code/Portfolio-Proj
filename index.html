@@ -23,7 +23,8 @@
 </head>
 
 <body>
-    <header style="width: 1169px; height: 42px; left:140px; top:40px;">
+    <!--NavbAR-->
+    <header style="width:100%; height: 42px;">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="d-flex">
@@ -39,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Works</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About ME</a>
@@ -52,10 +53,31 @@
             </div>
         </nav>
     </header>
-    <div class="caption">
-        <h1>Hi I'm Barbie Cortinas</h1>
-        <h3>Frontend Developer based in America</h3>
-    </div>
+    <!--intro-->
+    <main>
+        <!--Hero-->
+        <div class="flex flex-col md:flex-row">
+            <img src="images/self-pic.jpeg" target="_blank" alt="Image of self" class="img-fluid">
+            <div class="container-1 text-center">
+                <div class="row">
+                    <div class="col-sm-3 offset-sm-4 col-md-4 offset-md-6 ms-md-auto"
+                        style="position: absolute; right: calc(40% - 450px/2 - 342.5px); top: 455px; font-size: 16px;">
+                        <p>For anyone who wants to start learning code, this workshop is very interesting. You will be
+                            challenged with different
+                            exercises, and everything is well explained, homework and deadlines are good for keep focus
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caption ">
+            <h1>Hi I'm Barbie Cortinas</h1>
+            <h3>Frontend Developer based in America</h3>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto col-md-5" id="style-1">
+            <button class="btn btn-primary" type="button">Projects</button>
+        </div>
+    </main>
 </body>
 
 </html>
