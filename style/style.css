@@ -36,3 +36,33 @@ h3 {
 #style:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 992px) {
+  /* Homepage*/
+  .row .col-sm-3,
+  .h1 {
+    position: relative;
+  }
+  .h1 .h-1 {
+    position: absolute;
+    left: 40px;
+    bottom: -20px;
+  }
+  .row p {
+    display: flex;
+    flex-direction: column;
+    left: 300px;
+    margin-top: auto;
+  }
+  .caption h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+  }
+  #style-1 {
+    display: inline-flex;
+    left: -50%;
+    top: 50%;
+  }
+  /*About ME */
+}
