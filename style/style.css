@@ -48,21 +48,33 @@ h3 {
     left: 40px;
     bottom: -20px;
   }
-  .row p {
+  .container-1 #style-2 {
+    display: block;
+  }
+  #style-2 {
     display: flex;
-    flex-direction: column;
-    left: 300px;
-    margin-top: auto;
+    align-self: flex-start;
+    margin-right: 250px;
+  }
+  p {
+    flex-direction: row;
+    margin-top: 400px;
+    margin-left: -100px;
+    padding-right: 25px;
   }
   .caption h3 {
     position: absolute;
     left: 20px;
     bottom: 70px;
   }
+  .caption {
+    display: block;
+  }
   #style-1 {
     display: inline-flex;
     left: -50%;
-    top: 50%;
+    top: 55%;
   }
+
   /*About ME */
 }
