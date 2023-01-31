@@ -29,9 +29,11 @@ h3 {
   color: var(--primary-color);
 }
 #style-1 {
-  position: absolute;
   right: calc(40% - 450px / 2 - 342.5px);
-  top: 800px;
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  height: auto;
 }
 #style:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
