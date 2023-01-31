@@ -36,7 +36,6 @@ h3 {
 #style:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 992px) {
   /* Homepage*/
 
@@ -66,13 +65,17 @@ h3 {
     display: block;
   }
   #style-1 {
-    display: flex;
-    justify-content: flex-start;
-    right: 200px;
+    justify-content: center;
     top: auto;
+    right: 200px;
   }
   #style-1 button {
     width: 200px;
+    color: black;
+  }
+  #style-1 button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 
   /*About ME */
