@@ -39,15 +39,7 @@ h3 {
 
 @media (max-width: 992px) {
   /* Homepage*/
-  .row .col-sm-3,
-  .h1 {
-    position: relative;
-  }
-  .h1 .h-1 {
-    position: absolute;
-    left: 40px;
-    bottom: -20px;
-  }
+
   .container-1 #style-2 {
     display: block;
   }
@@ -60,7 +52,10 @@ h3 {
     flex-direction: row;
     margin-top: 400px;
     margin-left: -100px;
-    padding-right: 25px;
+    padding-right: 90px;
+    font-size: 16px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .caption h3 {
     position: absolute;
@@ -71,9 +66,13 @@ h3 {
     display: block;
   }
   #style-1 {
-    display: inline-flex;
-    left: -50%;
-    top: 55%;
+    display: flex;
+    justify-content: flex-start;
+    right: 200px;
+    top: auto;
+  }
+  #style-1 button {
+    width: 200px;
   }
 
   /*About ME */
