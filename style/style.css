@@ -1,6 +1,7 @@
 :root {
-  --primary-color: white;
+  --primary-color: rgb(67, 92, 56);
   --secondary-color: #272142;
+  --third-color: white;
 }
 
 body {
@@ -102,7 +103,7 @@ h3 {
   font-weight: 700;
   position: absolute;
   line-height: 50px;
-  color: var(--primary-color);
+  color: var(--third-color);
 }
 
 footer {
