@@ -2,13 +2,89 @@
   --primary-color: white;
   --secondary-color: #272142;
 }
-.caption {
-  position: absolute;
-  width: 506px;
-  height: 485px;
-  left: 140px;
-  top: 300px;
+
+body {
+  margin: 0;
+  background-color: azure;
+  height: auto;
 }
+.h-1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, rgb(179, 0, 255), 1.5),
+    -30px 0px 40px rgba(0, 0, rgb(179, 0, 255), 1.5);
+}
+.landing {
+  background-color: #fff;
+}
+.landing-text {
+  display: flex;
+  flex: 0 1 45vw;
+  height: 65vh;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+#landing-image {
+  background: url(/images/self-pic.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex: 0 1 500vw;
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: dashed;
+  transition: background 500ms ease;
+}
+.btn:hover {
+  background-color: green;
+}
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(139, 68, 1);
+  color: #fff;
+}
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+.container .h1 {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 h1 {
   width: 500px;
   height: 150px;
@@ -28,57 +104,8 @@ h3 {
   line-height: 50px;
   color: var(--primary-color);
 }
-#style-1 {
-  right: calc(40% - 450px / 2 - 342.5px);
-  position: absolute;
+
+footer {
   text-align: center;
-  bottom: 20px;
-  height: auto;
-}
-#style:hover {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 992px) {
-  /* Homepage*/
-
-  .container-1 #style-2 {
-    display: block;
-  }
-  #style-2 {
-    display: flex;
-    align-self: flex-start;
-    margin-right: 250px;
-  }
-  p {
-    flex-direction: row;
-    margin-top: 400px;
-    margin-left: -100px;
-    padding-right: 90px;
-    font-size: 16px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .caption h3 {
-    position: absolute;
-    left: 20px;
-    bottom: 70px;
-  }
-  .caption {
-    display: block;
-  }
-  #style-1 {
-    justify-content: center;
-    top: auto;
-    right: 200px;
-  }
-  #style-1 button {
-    width: 200px;
-    color: black;
-  }
-  #style-1 button:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
-
-  /*About ME */
+  margin: auto;
 }
