@@ -2,12 +2,12 @@
   --primary-color: rgb(67, 92, 56);
   --secondary-color: #272142;
   --third-color: white;
+  --box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 body {
   margin: 0;
   background-color: azure;
-  height: auto;
 }
 .h-1 {
   font-weight: 400;
@@ -76,6 +76,102 @@ main {
   padding: 0.8rem;
   text-align: center;
 }
+.about-section {
+  padding: 160px 20px;
+}
+.about-section-content {
+  margin: 30px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section p {
+  font-size: 18px;
+  font-family: "Playfair Display";
+}
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -55px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
 
 .container {
   display: flex;
@@ -105,8 +201,50 @@ h3 {
   line-height: 50px;
   color: var(--third-color);
 }
+.offset-md-7 {
+  padding: 2000px 15px 10px 5px;
+}
 
 footer {
   text-align: center;
   margin: auto;
+}
+
+@media (max-width: 992px) {
+  .landing {
+    display: flex;
+    height: 100%;
+  }
+  #landing-text {
+    height: 100vh;
+  }
+  .landing .h-1 {
+    padding: 20px 15px 10px 5px;
+    font-weight: 200;
+    font-size: small;
+  }
+  .offset-md-10 .h-2 {
+    color: whitesmoke;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
+  #landing-image {
+    position: relative;
+    filter: grayscale(45%);
+    object-fit: fill;
+  }
+  #landing-image h3 {
+    padding-top: 300px;
+  }
+  main .text-center {
+    border-width: 100px;
+    font-family: "Playfair Display";
+    background-color: beige;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: var(--box-shadow);
+  }
 }
