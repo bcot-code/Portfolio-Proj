@@ -228,6 +228,14 @@ footer {
   font-family: "Kavoon", serif;
   color: green;
 }
+footer .social_links a {
+  margin: 0 20px;
+}
+.email_link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 24px;
+}
 /* Aboutme extra details */
 .app {
   display: grid;
