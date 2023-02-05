@@ -1,7 +1,10 @@
 :root {
+  --brand-color: #6c63ff;
   --primary-color: rgb(67, 92, 56);
   --secondary-color: #272142;
   --third-color: white;
+  --fouth-color: #004a2f;
+  --background-grass: #55c59d;
   --box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -70,7 +73,7 @@ main {
 #header {
   padding: 1.5rem;
   text-align: center;
-  background: rgb(139, 68, 1);
+  background: var(--background-grass);
   color: #fff;
 }
 #header h2 {
@@ -90,6 +93,14 @@ main {
 .about-section-content {
   margin: 30px;
 }
+.btn-branding {
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  color: var(--third-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
 .content h1 {
   font-size: 64px;
   line-height: 80px;
@@ -97,7 +108,6 @@ main {
 .content h3 {
   font-size: 24px;
   line-height: 1.5;
-  font-family: "Playfair Display";
 }
 .content-container p {
   font-size: 18px;
@@ -209,6 +219,9 @@ h1 {
   line-height: 85px;
   color: var(--primary-color);
 }
+h2 {
+  font-family: "Kavoon", serif;
+}
 h3 {
   font-family: "Ubuntu", serif;
   font-size: 18px;
@@ -218,6 +231,9 @@ h3 {
   line-height: 50px;
   color: var(--third-color);
 }
+h4 {
+  font-family: "Kavoon", serif;
+}
 .offset-md-7 {
   padding: 2000px 15px 10px 5px;
 }
@@ -225,16 +241,44 @@ h3 {
 footer {
   text-align: center;
   margin: auto;
-  font-family: "Kavoon", serif;
   color: green;
+  margin: 60px 0;
 }
-footer .social_links a {
+footer .contact_box {
+  background-color: var(--background-grass);
+  padding: 30px 120px;
+  color: var(--third-color);
+  border-radius: 10px;
   margin: 0 20px;
+}
+footer .contact_box h4 {
+  font-size: 48px;
+}
+footer .contact_box p {
+  margin: 0;
 }
 .email_link {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 24px;
+  border-radius: 56px;
+}
+.email_link:hover {
+  background-color: var(--fouth-color);
+  color: var(--third-color);
+}
+footer .social_links a {
+  margin: 0 20px;
+  background-color: var(--secondary-color);
+  padding: 10px 11px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .social_links a:hover {
+  box-shadow: var(--box-shadow);
+  background-color: var(--primary-color);
+  color: var(--third-color);
 }
 /* Aboutme extra details */
 .app {
@@ -292,6 +336,7 @@ footer .social_links a {
     width: 0;
     font-size: 52px;
   }
+
   .landing .h-1 {
     padding: 20px 15px 10px 5px;
     font-weight: 200;
@@ -304,7 +349,6 @@ footer .social_links a {
     text-align: center;
     padding: 0;
   }
-
   #landing-image {
     position: relative;
     filter: grayscale(45%);
@@ -328,5 +372,11 @@ footer .social_links a {
   .weather-app {
     width: 350px;
     margin: 0 auto;
+  }
+  footer .contact_box {
+    padding: 30px;
+  }
+  footer .contact_box h4 {
+    font-size: small;
   }
 }
