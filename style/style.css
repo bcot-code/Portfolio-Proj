@@ -41,7 +41,7 @@ main {
 .landing-text {
   display: flex;
   flex: 0 1 45vw;
-  height: 65vh;
+  height: 50vh;
   justify-content: center;
   align-content: center;
   text-align: center;
@@ -133,10 +133,11 @@ main {
   background-color: #ffffff;
   border-radius: 50%;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  padding: 15px;
+  width: 65px;
+  height: 65px;
   line-height: 50px;
-  font-size: 22px;
+  font-size: 42px;
   display: inline-block;
   align-items: center;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -311,7 +312,7 @@ footer .social_links a:hover {
   grid-area: "emoji";
 }
 .social_links {
-  margin: 24px 0 0;
+  margin: 30px 0 0;
 }
 .jss1 {
   margin: 24px 0 8px 0;
