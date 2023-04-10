@@ -318,20 +318,20 @@ footer .social_links a:hover {
   margin: 24px 0 8px 0;
 }
 #emoji {
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 300%;
+    margin-left: 50%;
+    width: 100%;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 50%;
   }
 }
 /* `lg` applies to medium devices (tablets, less than 992px)*/
@@ -397,5 +397,33 @@ footer .social_links a:hover {
   }
   footer .contact_box h4 {
     font-size: small;
+  }
+  .wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 15px;
+    width: 65px;
+    height: 65px;
+    line-height: 50px;
+    font-size: 42px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+  }
+  #emoji {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .social_links {
+    position: relative;
+    top: 0px;
+    bottom: 30px;
+    padding-top: 800px;
   }
 }
