@@ -348,11 +348,6 @@ footer .social_links a:hover {
     padding: 0;
   }
 
-  h1 {
-    height: 0;
-    width: 0;
-    font-size: 52px;
-  }
   .container h3 {
     margin-bottom: 50px;
   }
@@ -392,12 +387,15 @@ footer .social_links a:hover {
     width: 350px;
     margin: 0 auto;
   }
+  /* Contact INFO*/
   footer .contact_box {
     padding: 30px;
   }
   footer .contact_box h4 {
     font-size: small;
   }
+  /* ABOUT ME */
+
   .wrapper .icon {
     position: relative;
     background-color: #ffffff;
@@ -413,17 +411,47 @@ footer .social_links a:hover {
     color: #333;
     text-decoration: none;
   }
-  #emoji {
-    animation-duration: 8s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  .about-section-content .col-md-7 h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    padding-top: 50px;
   }
-
   .social_links {
     position: relative;
     top: 0px;
     bottom: 30px;
-    padding-top: 800px;
+    padding-top: -900px;
+  }
+  .mb-6 {
+    display: flex;
+    padding-top: 100px;
+  }
+  .col-xs-2 {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 40px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #emoji {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
   }
 }
