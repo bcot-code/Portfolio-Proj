@@ -37,6 +37,7 @@ main {
 }
 .landing {
   background-color: #fff;
+  padding-top: 350px;
 }
 .landing-text {
   display: flex;
@@ -86,6 +87,25 @@ main {
 #caption {
   padding: 0.8rem;
   text-align: center;
+}
+
+.pro-info {
+  position: relative;
+  top: 12px;
+  height: fit-content;
+  padding: 1rem;
+  z-index: 9999999;
+}
+.info {
+  color: #46c1f6;
+  line-height: 1.1em;
+  background-size: 0.3em 0.1em;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s linear, background-size 0.3s 0.2s linear;
+}
+.info:hover {
+  color: #6c63ff;
 }
 .content-container {
   padding: 60px 20px;
@@ -282,8 +302,8 @@ footer .contact_box p {
 footer .social_links a {
   margin: 0 20px;
   background-color: var(--secondary-color);
-  padding: 10px 11px;
-  font-size: 18px;
+  padding: 15px 20px;
+  font-size: 29px;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
 }
