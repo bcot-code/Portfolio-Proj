@@ -23,111 +23,163 @@
     <link rel="stylesheet" href="style/style.css" />
 
 </head>
+<div class="section-border">
+    <div class="section-background">
+        <img src="images/quinton-coetzee-gpa8Y_Fk7Rg-unsplash.jpg" alt=""
+            style="object-position:50%; height:200%; object-fit:cover;">
+        <div class="section-background-overlay" style="opacity: 0.15;"></div>
+    </div>
+</div>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
 
 <body>
-    <!--NavbAR-->
-    <header style="width: 100%; height: 42px;">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <div class="d-flex">
-                    <a class="navbar-band" href="/">
-                        <img src="/images/mylogo.png" class="img-fluid" alt="Shecode" width="100" height="35" />
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="https://codepen.io/bcor21/pen/abGwGNb">Ig promo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About ME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!--intro-->
-    <main>
-        <!--Hero Landing-->
-        <section class="landing">
-            <div id="landing-image" class="col-12 col-md-6 order-1 order-md-2">
-                <div class="container">
-                    <div class="row text-center col-lg-6">
-                        <div class="caption col-4 order-md-1">
-                            <h3>Front-end Developer based in America</h3>
+    <div id="siteWrapper" class="clearfix site-wrapper">
+
+        <!--Header-->
+        <header class="header" style=" z-index:10; position:absolute; color:white;">
+            <div class="sqs-announcement-bar-dropzone"></div>
+            <div class="header-announcement-bar-wrapper">
+                <div class="header-dropshadow" data-header-style="dynamic" data-test="header-shadow"></div>
+
+                <div class="header-inner container--fluid header-mobile-layout-left-nav-right header-layout-nav-right"
+                    style="padding:0;">
+                    <!--Background-->
+                    <div class="header-background theme-bg--primary">
+                    </div>
+                    <div class="header-display-desktop" data-content-field="site-title">
+                        <!--Social-->
+                        <!--Title and navbar-->
+                        <div class="header-title-nav-wrapper"
+                            style="display:flex; flex-wrap:nonwrap; flex: 1 0 67%; align-items: center;">
+                            <!--TITLE-->
+                            <div class="header-title" data-animation-role="header-element"
+                                style="flex-grow:0; flex-shrink:0; backface-visibility: hidden;">
+                                <div class="header-title-text" style="margin:0;">
+                                    <a class="navbar-band" href="/">
+                                        <img src="/images/mylogo.jpeg" class="img-fluid" alt="Shecode" width="20"
+                                            height="35" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Navbar-->
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
+                                        <div class="header-nav-item header-nav-item--folder">
+                                            <a class="header-nav-folder-title" href="about.html" tabindex="-1"
+                                                data-animation-role="header-element">About</a>
+                                            <div class="header-nav-folder-content">
+                                                <div class="header-nav-folder-item">
+                                                    <a href="/">
+                                                        <span class="header-nav-folder-item-content">infor</span>
+                                                    </a>
+                                                </div>
+                                                <div class="header-nav-folder-item">
+                                                    <a href="/work.html">
+                                                        <span class="header-nav-folder-item-content">Projects</span>
+                                                    </a>
+                                                </div>
+                                                <div class="header-nav-folder-item">
+                                                    <a href="/">
+                                                        <span class="header-nav-folder-item-content">Partners</span>
+                                                    </a>
+                                                </div>
+                                                <div class="header-nav-folder-item">
+                                                    <a href="contact.html">
+                                                        <span class="header-nav-folder-item-content">Reach me</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="/work.html" data-animation-role="header-element">Projects</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Action-->
+                        <div class="header-actions header-actions--right">
+                            <div class="header-actions-action header-actions-action--social"></div>
+                            <div class="showOnMobile"></div>
+                            <div class="showOnDesktop"></div>
+                            <div class="header-actions-action header-actions-action--cta"
+                                data-animation-role="header-element">
+                                <a class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+                                    href="/contact.html">Reach</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="offset-md-10">
-                    <h1 class=" h-2 d-flex me-auto p-2 offset-md-11"> Hi! I'm Barbara (Barbie), Welcome to my Portfolio
-                    </h1>
-                </div>
             </div>
-            <div class="landing-text">
-                <div class="landing-text-inner">
-                    <a href="https://www.shecodes.io/graduates/13404-barbara-cortinas" class="btn" id="view-work">
-                        Projects
-                    </a>
+
+        </header>
+        <!--intro-->
+        <main>
+            <!--Hero Landing-->
+            <section class="landing">
+                <div id="landing-image" class="col-12 col-md-6 order-1 order-md-2">
+                    <div class="container">
+                        <div class="row text-center col-lg-6">
+                            <div class="caption col-4 order-md-1 hidden-mobile">
+                                <h3>Front-end Developer based in America</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-md-10">
+                        <h1 class=" h-2 d-flex me-auto p-2 offset-md-11"> Hi! I'm Barbara (Barbie), Welcome to my
+                            Portfolio
+                        </h1>
+                    </div>
                 </div>
-            </div>
+            </section>
             <br />
-
-        </section>
-        <p class="text-center">"Everday life is like programming, I guess. If you love something you can put beauty into
-            it..."
-            -Donald Knuff
-        </p>
-        <div id="images">
-            <div id="header">
-                <h2>MY projects</h2>
-            </div>
-
-            <div class="proj-imag-container stan-lee">
-                <img src="/images/Stan-Lee.png" alt="" class="stan-lee_app">
-            </div>
-            <a href="https://stan-lee-fav-creator.netlify.app" target="_blank" class="text-decoration-none">
-                <div id="caption" class="pro-info info">
-                    <h4>Stan-Lee</h4>
-                    <p>Built with Responsive a web and mobile view, Html and Js.</p>
+            <br />
+            <p class="text-center">"Everday life is like programming, I guess. If you love something you can put beauty
+                into
+                it..."
+                -Donald Knuff
+            </p>
+            <br /><br />
+            <div id="images">
+                <div id="header">
+                    <h2>MY projects</h2>
                 </div>
-            </a>
-            <a href="https://profound-gingersnap-dec269.netlify.app">
-                <img src="/images/WeatheraPP.png" alt="" class="weather-app" class="text-decoration-none" />
-                <div id="caption">
-                    <h4>Weather Launch App</h4>
+
+                <div class="proj-imag-container stan-lee">
+                    <img src="/images/Stan-Lee.png" alt="" class="stan-lee_app">
                 </div>
-            </a>
-        </div>
-    </main>
-    <hr>
-    <footer>
-        <div class="contact_box justify-content-between mb-5 d-none d-lg-flex">
-            <div>
-                <h4>Lets work together</h4>
-                <p style="font-family:Playfair Display, serif; font-size: 18px;">Works</p>
+                <a href="https://stan-lee-fav-creator.netlify.app" target="_blank" class="text-decoration-none">
+                    <div id="caption" class="pro-info info">
+                        <h4>Stan-Lee</h4>
+                        <p>Built with Responsive a web and mobile view, Html and Js.</p>
+                    </div>
+                </a>
+                <a href="https://profound-gingersnap-dec269.netlify.app">
+                    <img src="/images/WeatheraPP.png" alt="" class="weather-app" class="text-decoration-none" />
+                    <div id="caption">
+                        <h4>Weather Launch App</h4>
+                    </div>
+                </a>
             </div>
-            <div>
-                <a href="/contact.html#contact" class="btn btn-branding">Contact Me</a>
+        </main>
+        <hr>
+        <footer>
+            <div class="contact_box d-none d-lg-flex">
+                <div style="padding-left: 365px;">
+                    <h4>More infor Below</h4>
+                </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-center mb-5">
-            <a href="mailto:bcort49@gmail.com" target="_blank" class="email_link">~Bcort49~</a>
-        </div>
-        <div class="social_links d-flex justify-content-center">
-            <a href="https://github.com/bcot-code">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-    </footer>
+            <div class="social_links d-flex justify-content-center">
+                <a href="https://github.com/bcot-code">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.is"
         integrity="sha256-Fgpb/KJQlLNfOu91ta32o/NMZ×ltwRo8QtmAMRdAu8=" crossorigin="anonymous"></script>
     <script scr="js/main.js"></script>
