@@ -284,7 +284,7 @@ main {
 }
 
 #landing-image {
-  background: url(dist/images/self-pic.jpeg);
+  background: url(../dist/images/self-pic.jpeg);
   background-position: center;
   background-size: cover;
   height: 80vh;
