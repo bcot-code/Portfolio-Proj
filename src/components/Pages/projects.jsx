@@ -5,7 +5,7 @@ export default function Projects(props) {
     <div>
       <div className="content-container container is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
         <div className="content">
-          <h2 className="mb-4">Let's do some work together</h2>
+          <h2 className="mb-4"> Let's do some work together</h2>
           {/* Projects */}
           {props.projects.map((project) => (
             <div className="column is-half" key={project.id}>
