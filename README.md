@@ -28,7 +28,7 @@ To run this application, you will need to install Node.js and npm (Node Package 
 
 ## Screen Shots
 
-![ScreenShot](./assets/images/port1.png)
+![ScreenShot](./public/images/profilePic.png)
 
 ## FEATURES
 
