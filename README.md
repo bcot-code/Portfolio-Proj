@@ -20,11 +20,11 @@ To run this application, you will need to install Node.js and npm (Node Package 
 
 ## USAGE
 
-NODEJS
-HTML /CSS
-JAVASCRIPT
-EXPRESS
-REACT
+- NODEJS
+- HTML /CSS
+- JAVASCRIPT
+- EXPRESS
+- REACT
 
 ## Screen Shots
 
@@ -51,4 +51,4 @@ This app was created using "Create React App". It provides a simple way to creat
 If you have any questions about the repository,
 please feel free to contact me at
 
-[bcort49](mailto:bcort49@gmail.com) or check out my work on [GitHub](https://github.com/bcot-code).
+[Bcort49](mailto:bcort49@gmail.com) or check out my work on [GitHub](https://github.com/bcot-code).
