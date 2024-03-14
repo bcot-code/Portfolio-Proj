@@ -26,7 +26,7 @@ const projects = [
     name: "Market Mingle",
     description:
       "Create Market Mingle with easier connecting local farmers and consumers in a shared celebration of fresh produce",
-    img: "/images/Market-Minlge.png",
+    img: "/images/Market-Mingle.png",
     techUsed: "JS, Node, VITE-REACT",
     liveUrl: "https://marketmingle-1.onrender.com/home",
   },
