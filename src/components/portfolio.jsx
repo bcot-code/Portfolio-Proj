@@ -23,12 +23,12 @@ const projects = [
   },
   {
     id: 2,
-    name: "Stan-Lee Web",
+    name: "Market Mingle",
     description:
-      "Create a simple web of Stan Lee including his works and projects",
-    img: "/images/Stan-Lee.png",
-    techUsed: "HTML, JavaScript",
-    liveUrl: "https://stan-lee-fav-creator.netlify.app/",
+      "Create Market Mingle with easier connecting local farmers and consumers in a shared celebration of fresh produce",
+    img: "/images/Market-Minlge.png",
+    techUsed: "JS, Node, VITE-REACT",
+    liveUrl: "https://marketmingle-1.onrender.com/home",
   },
   {
     id: 3,
