@@ -1,4 +1,3 @@
-import React from "react";
 import {
   faFacebookF,
   faTwitter,
@@ -10,16 +9,22 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Add the required icons to the library
-library.add(faFacebookF, faTwitter, faInstagram, faGithub, faYoutube);
-import Resume from "../../resume/Resume.pdf";
+library.add(
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faYoutube,
+  faEnvelope
+);
+import Resume from "../../resume/Resume_pdf.pdf";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 export default function About() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="index.html">
-            More ME?
-          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -50,16 +55,6 @@ export default function About() {
                   Certificates
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="contact.html#contact">
-                  Contact
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="work.html#workshop">
-                  Workshop
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -85,23 +80,28 @@ export default function About() {
                   solving a puzzle or making art, but more less helping clients.
                   <br />
                   <br />
-                  As a first time Front-End Developer who worked on the side
-                  with a few projects and learned coding through many bootcamps
-                  (Freemote, Codeacademy, Youtube, and Shecodes) to becoming an
-                  Software Developer / a Freelancer all at my own pace. I'm a
-                  hard worker, fast learner, and strategic planner so that way I
-                  can deliver high quality of solutions. It's always a great
-                  opportunity to work with others with the same passion of
+                  As a first time self-pace Full Stack Developer who worked on
+                  the side with a few projects and learning to code through many
+                  bootcamps (Freemote, Codeacademy, Youtube, and Shecodes) to
+                  becoming an Software Developer / a Freelancer all at my own
+                  pace. Just making my way through great bootcamp called UT Full
+                  Stack bootcamp and grasping all of their projects all at once
+                  which helped me grow more into the Developer I am today.
+                  <br />
+                  <br />
+                  Im a hard worker, fast learner, and strategic planner so that
+                  way I can deliver high quality of solutions. Its always a
+                  great opportunity to work with others with the same passion of
                   making the web , you know fun and educational for the next
-                  generation of programmers. Currently, I am seeking more
-                  opportunities at any chance given as a Front-End developer.
-                  I'm open to working remotely and with flexible hours. Highly
+                  generation of programmers. Currently, seeking more
+                  opportunities at any chance given as a self-taught Developer.
+                  Open to working remotely and with flexible hours. Highly
                   flexible in JS and React(the web is built-in responsive mobile
                   view as well).
                 </p>
                 <br />
                 <h4>
-                  <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
+                  <FontAwesomeIcon icon={faEnvelope} />
                   <em> contact me below </em>
                 </h4>
               </div>
@@ -141,9 +141,9 @@ export default function About() {
                     </a>
                     <a
                       href="https://www.linkedin.com/in/barbara-c-874a46214/"
-                      className="icon"
+                      className="icon mail"
                     >
-                      <FontAwesomeIcon icon="fa-solid fa-envelope" />
+                      <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function About() {
                 <div className="link">
                   <a href={Resume} target="blank">
                     Resume
-                    <FontAwesomeIcon icon="fa-solid fa-download" />
+                    <FontAwesomeIcon icon={faDownload} />
                   </a>
                 </div>
               </div>

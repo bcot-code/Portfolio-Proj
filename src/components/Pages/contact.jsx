@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div>
-      <nav className="nav navbar-expand-lg navbar-light bg-light">
+      {/* <nav className="nav navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="index.html">
           More ME?
         </a>
@@ -35,19 +35,9 @@ export default function Contact() {
                 Certificates
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="contact.html#contact">
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="work.html#workshop">
-                Workshop
-              </a>
-            </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
 
       <div className="content">
         <h1 className="mb-5">Leave a Dm with me</h1>
@@ -116,17 +106,6 @@ export default function Contact() {
             rel="noreferrer"
           >
             ~Bcort49~
-          </a>
-        </div>
-        <div className="social_links d-flex justify-content-center">
-          <a href="">
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a href="">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="">
-            <i className="fa-brands fa-twitter"></i>
           </a>
         </div>
       </footer>

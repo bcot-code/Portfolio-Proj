@@ -1,7 +1,8 @@
 // import React from "react";
 import Projects from "./Pages/projects";
-
-
+import self from "../assets/Images/self-pic.jpeg";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const projects = [
   {
     id: 0,
@@ -46,6 +47,9 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div className="columns is-multiline">
         <br />
+        <aside>
+          <img src={self} alt="Barbie C." />
+        </aside>
         <div id="landing-image" className="col-12 col-md-6 order-1 order-md-2">
           <div className="row text-center col-lg-6">
             <div className="caption col-4 order-md-1 hidden-mobile">
@@ -55,7 +59,7 @@ export default function Portfolio() {
           <div className="offset-md-10">
             <h1 className=" h-2 d-flex me-auto p-2 offset-md-11">
               {" "}
-              Hi! I'm Barbara (Barbie), Welcome to my Portfolio
+              Hi! Im Barbara (Barbie), Welcome to my Portfolio
             </h1>
           </div>
         </div>
@@ -68,7 +72,7 @@ export default function Portfolio() {
         </div>
         <div className="social_links d-flex justify-content-center">
           <a href="https://github.com/bcot-code">
-            <i className="fa-brands fa-github"></i>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
       </footer>
