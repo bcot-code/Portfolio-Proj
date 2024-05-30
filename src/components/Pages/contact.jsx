@@ -1,46 +1,8 @@
 export default function Contact() {
   return (
     <div>
-      {/* <nav className="nav navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="index.html">
-          More ME?
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="index.html"
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://www.shecodes.io/graduates/13404-barbara-cortinas"
-              >
-                Certificates
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav> */}
-
       <div className="content">
-        <h1 className="mb-5">Leave a Dm with me</h1>
+        <h1 className="mb-5">Leave a DM with me</h1>
         <div className="row">
           <div className="col-md-8">
             <form
@@ -72,21 +34,24 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          <div className="col-md-6">
-            <h3>Email</h3>
-            <p className="offset-md-6">
-              <a href="mailto:bcort49@gmail.com">bcort49@gmail.com</a>
-            </p>
-            <h3>IG</h3>
-            <p className="offset-md-6">
-              <a href="#">@bccode</a>
-            </p>
-            <h3>Contact me</h3>
-            <p className="offset-md-6">
-              <a href="https://github.com/bcot-code" className="email-link">
-                https://github.com/bcot-code
-              </a>
-            </p>
+          <div className="d-grid gap-1">
+            <a href="mailto:bcort49@gmail.com">
+              <button className="btn btn-primary">Email</button>
+            </a>
+          </div>
+          <div className="d-grid gap-2 btn-primary">
+            <a
+              href="https://www.linkedin.com/in/barbara-c-874a46214"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="btn btn-secondary"
+                onClick="window.location.href='https://www.linkedin.com/in/barbara-c-874a46214'"
+              >
+                Linkedin
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -100,12 +65,12 @@ export default function Contact() {
         </div>
         <div className="d-flex justify-content-center mb-5">
           <a
-            href="mailto:bcort49@gmail.com"
+            href="https://github.com/bcot-code"
             target="_blank"
-            className="email_link"
+            className="github_link"
             rel="noreferrer"
           >
-            ~Bcort49~
+            ~Tap to Github~
           </a>
         </div>
       </footer>
