@@ -520,13 +520,13 @@ footer .contact_box h4 {
 footer .contact_box p {
   margin: 0;
 }
-.email_link {
+.github_link {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 24px;
   border-radius: 56px;
 }
-.email_link:hover {
+.github_link:hover {
   background-color: var(--fouth-color);
   color: var(--third-color);
 }
