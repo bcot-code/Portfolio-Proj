@@ -104,6 +104,14 @@ export default function About() {
                   <FontAwesomeIcon icon={faEnvelope} />
                   <em> contact me below </em>
                 </h4>
+                <div className="resume-link">
+                  <div className="link">
+                    <a href={Resume} target="blank">
+                      Resume
+                      <FontAwesomeIcon icon={faDownload} />
+                    </a>
+                  </div>
+                </div>
               </div>
               <div className="emoji text-center" id="emoji">
                 <img
@@ -113,9 +121,9 @@ export default function About() {
                 />
               </div>
 
-              <div className="social_links position-absolute top-0 end-0">
+              <div className="social_links bottom-5">
                 <div className="jss1 ">
-                  <div className="wrapper col-md-6 ">
+                  <div className="wrapper">
                     <a href="#" className="icon facebook">
                       <div className="tooltip">Facebook</div>
                       <FontAwesomeIcon icon={faFacebookF} />
@@ -146,14 +154,6 @@ export default function About() {
                       <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                   </div>
-                </div>
-              </div>
-              <div className="resume-link">
-                <div className="link">
-                  <a href={Resume} target="blank">
-                    Resume
-                    <FontAwesomeIcon icon={faDownload} />
-                  </a>
                 </div>
               </div>
             </div>
