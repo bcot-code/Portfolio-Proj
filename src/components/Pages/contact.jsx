@@ -60,7 +60,6 @@ export default function Contact() {
         <div className="contact_box justify-content-center mb-5 d-none d-lg-flex">
           <div>
             <h4>Lets work together</h4>
-            <p>Works</p>
           </div>
         </div>
         <div className="d-flex justify-content-center mb-5">
