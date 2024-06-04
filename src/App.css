@@ -566,7 +566,7 @@ footer .social_links a:hover {
   margin: 30px 0 0;
 }
 .jss1 {
-  margin: 24px 0 8px 0;
+  margin: 24px 0 9px 0;
 }
 #emoji {
   animation-duration: 4s;
@@ -693,12 +693,7 @@ footer .social_links a:hover {
     padding-bottom: 15px;
     padding-top: 50px;
   }
-  .social_links {
-    position: relative;
-    top: 0px;
-    bottom: 30px;
-    padding-top: -900px;
-  }
+
   .mb-6 {
     display: flex;
     padding-top: 100px;
