@@ -50,7 +50,7 @@ export default function Portfolio() {
         <aside>
           <img src={self} alt="Barbie C." />
         </aside>
-        <div id="landing-image" className="col-12 col-md-6 order-1 order-md-2">
+        <div id="landing-image" className="col-md-6 order-md-2">
           <div className="row text-center col-lg-6">
             <div className="caption col-4 order-md-1 hidden-mobile">
               <h3>Front-end Developer based in America</h3>
