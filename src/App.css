@@ -263,7 +263,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  width: 75%;
 }
 .stan-lee_app {
   width: 800px;
@@ -288,7 +288,7 @@ main {
   background-position: center;
   background-size: cover;
   height: 80vh;
-  flex: 0 1 500vw;
+  flex: 0 1 50vw;
   margin: 0;
 }
 
