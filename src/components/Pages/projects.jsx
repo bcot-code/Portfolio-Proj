@@ -1,11 +1,15 @@
-import React from "react";
-
+// import React from "react";
 export default function Projects(props) {
+  const { projects } = props;
+
+  if (!Array.isArray(projects) || projects.length === 0) {
+    return <div>No projects available.</div>;
+  }
   return (
     <div>
-      <div className="content-container container is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
+      <div className="is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
+        <h2 className="mb-4">Let&apos;s do some work together</h2>
         <div className="content">
-          <h2 className="mb-4"> Let's do some work together</h2>
           {/* Projects */}
           {props.projects.map((project) => (
             <div className="column is-half" key={project.id}>

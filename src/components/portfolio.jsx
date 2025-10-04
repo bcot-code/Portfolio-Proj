@@ -6,30 +6,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const projects = [
   {
     id: 0,
-    name: "Weather Dashboard",
+    name: "AI Mocked Inteview(CLONE)",
     description:
-      "A weather dashboard that allows users to search for current and future conditions for any city in the world. The application utilizes API data to display information such as temperature and humidity.",
-    img: "/images/WeatheraPP.png",
-    techUsed: "React, Html, CSS",
-    liveUrl: "https://profound-gingersnap-dec269.netlify.app",
+      "user can practice technical interview questions with an AI Interviewer, saving time and effort in preparing for real interviews. It'll provide saving the interviews. Best Practice for React Vite",
+    img: "/images/AI-Mock-Interview.png",
+    techUsed: "JS, React Vite, Node, Firebase and Vapi AI",
+    liveUrl: "https://ai-mock-interview-u54u.vercel.app/sign-in",
   },
   {
     id: 1,
-    name: "Digital-Day-Planner",
+    name: "Zibooka(MERN Stack CLONE)",
     description:
-      "Create a simple calendar application for the day that allows a user to save events for each hour of a typical working day (9am-5pm) by modifying starter code.",
-    img: "/images/Work-Schedule.png",
-    techUsed: "Html, CSS, JQuery, and bootstrap",
-    liveUrl: "https://bcot-code.github.io/Digital-Day-Planner/",
+      "Implement a full-stack web application that allows users to browse, search, and purchase books online. Best Practice for MERN Stack",
+    img: "/images/zibooka.png",
+    techUsed: "MERN Stack Book Store App Using React, MongoDB, Express, Node and Stripe for payment",
+    liveUrl: "zibooka-neon.vercel.app",
   },
   {
     id: 2,
-    name: "Market Mingle",
+    name: "Movie Search_movie",
     description:
-      "Create Market Mingle with easier connecting local farmers and consumers in a shared celebration of fresh produce",
-    img: "/images/Market-Mingle.png",
+      "Create a movie search engine that allows users to search for movies and view details about them using the React and JS.Plus sort by old to new",
+    img: "/images/Search_movie.png",
     techUsed: "JS, Node, VITE-REACT",
-    liveUrl: "https://marketmingle-1.onrender.com/home",
+    liveUrl: "https://bcot-code.github.io/js-final-proj/",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div className="columns is-multiline">
         <br />
-        <aside>
+        <aside className="center">
           <img src={self} alt="Barbie C." />
         </aside>
         <div id="landing-image" className="col-md-6 order-md-2">

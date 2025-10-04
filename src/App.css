@@ -263,7 +263,14 @@ a {
 
 img {
   display: block;
-  width: 75%;
+  width: 50%;
+}
+.center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
 }
 .stan-lee_app {
   width: 800px;
@@ -338,9 +345,7 @@ main {
 .info:hover {
   color: #6c63ff;
 }
-.content-container {
-  padding: 60px 20px;
-}
+
 .content {
   margin: 30px;
   box-sizing: border-box;
@@ -611,7 +616,7 @@ footer .social_links a:hover {
 
   .content {
     text-align: center;
-    padding: 0;
+    padding: 50%;
   }
   header #navbarNav {
     background-color: whitesmoke;
