@@ -44,7 +44,7 @@ This app was created using "Create React App". It provides a simple way to creat
 
 ### Live URL
 
-[Live Site]()
+[Live Site](https://portfolio-proj-45pf.vercel.app)
 
 ## Questions ?
 
