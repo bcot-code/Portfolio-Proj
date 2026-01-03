@@ -28,7 +28,7 @@ To run this application, you will need to install Node.js and npm (Node Package 
 
 ## Screen Shots
 
-![ScreenShot](./public/images/profilePic.png)
+![ScreenShot](./public/images/portfolio-pic.png)
 
 ## FEATURES
 
@@ -44,7 +44,7 @@ This app was created using "Create React App". It provides a simple way to creat
 
 ### Live URL
 
-[Live Site](https://portfolioawesome.netlify.app)
+[Live Site]()
 
 ## Questions ?
 
