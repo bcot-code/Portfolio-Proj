@@ -11,7 +11,7 @@ function Header() {
     else return <Contact />;
   };
   return (
-    <div>
+    <div className="font-sans">
       <NavTabs
         currentPage={currentPage}
         handlePageChange={handlePageChange}

@@ -1,38 +1,36 @@
 function NavTabs({ currentlyPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange("About")}
-          className={currentlyPage === "About" ? "active" : "nav-link"}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#portfolio"
-          onClick={() => handlePageChange("Portfolio")}
-          className={
-            currentlyPage === "Portfolio" ? "nav-link active" : "nav-link"
-          }
-        >
-          Portfolio
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-          onClick={() => handlePageChange("Contact")}
-          className={
-            currentlyPage === "Contact" ? "nav-link active" : "nav-link"
-          }
-        >
-          Contact
-        </a>
-      </li>
-    </ul>
+    <nav className="nav-container">
+      <ul className="nav-list">
+        <li className="nav-item">
+          <a
+            href="#about"
+            onClick={() => handlePageChange("About")}
+            className={`nav-link ${currentlyPage === "About" ? "active" : ""}`}
+          >
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#portfolio"
+            onClick={() => handlePageChange("Portfolio")}
+            className={`nav-link ${currentlyPage === "Portfolio" ? "active" : ""}`}
+          >
+            Portfolio
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#contact"
+            onClick={() => handlePageChange("Contact")}
+            className={`nav-link ${currentlyPage === "Contact" ? "active" : ""}`}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 export default NavTabs;

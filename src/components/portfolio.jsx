@@ -1,81 +1,99 @@
-// import React from "react";
 import Projects from "./Pages/projects";
 import self from "../assets/Images/self-pic.jpeg";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const projects = [
   {
     id: 0,
-    name: "AI Mocked Inteview(CLONE)",
+    name: "AI Mocked Interview (CLONE)",
     description:
-      "user can practice technical interview questions with an AI Interviewer, saving time and effort in preparing for real interviews. It'll provide saving the interviews. Best Practice for React Vite",
+      "User can practice technical interview questions with an AI Interviewer, saving time and effort in preparing for real interviews. It'll provide saving the interviews. Best Practice for React Vite.",
     img: "/images/AI-Mock-Interview.png",
-    techUsed: "JS, React Vite, Node, Firebase and Vapi AI",
+    techUsed: "JS, React Vite, Node, Firebase, Vapi AI",
     liveUrl: "https://ai-mock-interview-u54u.vercel.app/sign-in",
   },
   {
     id: 1,
-    name: "Zibooka(MERN Stack CLONE)",
+    name: "Zibooka (MERN Stack CLONE)",
     description:
-      "Implement a full-stack web application that allows users to browse, search, and purchase books online. Best Practice for MERN Stack",
+      "A full-stack web app for browsing, searching, and purchasing books online. Best Practice for MERN Stack.",
     img: "/images/zibooka.png",
-    techUsed: "MERN Stack Book Store App Using React, MongoDB, Express, Node and Stripe for payment",
-    liveUrl: "zibooka-neon.vercel.app",
+    techUsed: "MERN Stack, MongoDB, Express, Node, Stripe",
+    liveUrl: "https://zibooka-neon.vercel.app",
   },
   {
     id: 2,
-    name: "Movie Search_movie",
+    name: "Movie Search",
     description:
-      "Create a movie search engine that allows users to search for movies and view details about them using the React and JS.Plus sort by old to new",
+      "Movie search engine that lets users find movies and view details using React and JS, sorted by release year.",
     img: "/images/Search_movie.png",
-    techUsed: "JS, Node, VITE-REACT",
+    techUsed: "JS, Node, Vite-React",
     liveUrl: "https://bcot-code.github.io/js-final-proj/",
   },
   {
     id: 3,
-    name: "REACT DICTIONARY APP",
+    name: "React Dictionary App",
     description:
-      "Generate dictionary app using react with the use of API to search for words",
+      "Dictionary app using React and an API for searching word definitions.",
     img: "/images/dictionary.png",
     techUsed: "React, HTML, CSS",
     liveUrl: "https://brilliant-rabanadas-1beb76.netlify.app",
   },
 ];
+
 export default function Portfolio() {
   return (
-    <div className="content is-medium">
-      <h1>Portfolio</h1>
-      <div className="columns is-multiline">
-        <br />
-        <aside className="center">
-          <img src={self} alt="Barbie C." />
-        </aside>
-        <div id="landing-image" className="col-md-6 order-md-2">
-          <div className="row text-center col-lg-6">
-            <div className="caption col-4 order-md-1 hidden-mobile">
-              <h3>Front-end Developer based in America</h3>
-            </div>
-          </div>
-          <div className="offset-md-10">
-            <h1 className=" h-2 d-flex me-auto p-2 offset-md-11">
-              {" "}
-              Hi! Im Barbara (Barbie), Welcome to my Portfolio
-            </h1>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <Projects projects={projects} />
-      <footer>
-        <div className="contact_box d-none d-lg-flex">
-          <h4>More infor Below</h4>
-        </div>
-        <div className="social_links d-flex justify-content-center">
-          <a href="https://github.com/bcot-code">
-            <FontAwesomeIcon icon={faGithub} />
+    <div className="page-section">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <img
+          src={self}
+          alt="Barbara C."
+          className="hero-image"
+        />
+        <h2 className="hero-title">Front-End Developer</h2>
+        <p className="hero-subtitle">
+          Hi! I&apos;m Barbara (Barbie), welcome to my portfolio! Please take a look
+          around &mdash; below you&apos;ll find some of my work. Feel free to reach out if
+          you&apos;d like to connect!
+        </p>
+        <div className="hero-buttons">
+          <a href="#contact" className="btn btn-primary">
+            Get In Touch
+          </a>
+          <a
+            href="https://github.com/bcot-code"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+          >
+            View Github
           </a>
         </div>
+      </section>
+      
+      <hr style={{ margin: "3rem auto", maxWidth: "600px", opacity: 0.3 }} />
+      
+      {/* Projects Section */}
+      <h2 className="section-title">My Projects</h2>
+      <Projects projects={projects} />
+
+      {/* Footer */}
+      <footer className="contact-footer">
+        <h4 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
+          More Info Below
+        </h4>
+        <a
+          href="https://github.com/bcot-code"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="github_link"
+        >
+          <FontAwesomeIcon icon={faGithub} /> Visit My GitHub
+        </a>
       </footer>
     </div>
   );
 }
+
