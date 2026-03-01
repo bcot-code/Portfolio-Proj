@@ -9,7 +9,7 @@ const projects = [
     name: "AI Mocked Interview (CLONE)",
     description:
       "User can practice technical interview questions with an AI Interviewer, saving time and effort in preparing for real interviews. It'll provide saving the interviews. Best Practice for React Vite.",
-    img: "/images/AI-Mock-Interview.png",
+    img: "/public/images/AIMockupCLONE.png",
     techUsed: "JS, React Vite, Node, Firebase, Vapi AI",
     liveUrl: "https://ai-mock-interview-u54u.vercel.app/sign-in",
   },
@@ -18,7 +18,7 @@ const projects = [
     name: "Zibooka (MERN Stack CLONE)",
     description:
       "A full-stack web app for browsing, searching, and purchasing books online. Best Practice for MERN Stack.",
-    img: "/images/zibooka.png",
+    img: "/public/images/ZibookaClone.png",
     techUsed: "MERN Stack, MongoDB, Express, Node, Stripe",
     liveUrl: "https://zibooka-neon.vercel.app",
   },
