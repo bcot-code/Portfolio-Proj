@@ -10,7 +10,7 @@ const projects = [
     description:
       "User can practice technical interview questions with an AI Interviewer, saving time and effort in preparing for real interviews. It'll provide saving the interviews. Best Practice for React Vite.",
     img: "/images/AIMockupCLONE.png",
-    techUsed: "JS, React Vite, Node, Firebase, Vapi AI",
+    techUsed: ["JS", "React Vite", "Node", "Firebase", "Vapi AI"],
     liveUrl: "https://ai-mock-interview-u54u.vercel.app/sign-in",
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     description:
       "A full-stack web app for browsing, searching, and purchasing books online. Best Practice for MERN Stack.",
     img: "/images/ZibookaClone.png",
-    techUsed: "MERN Stack, MongoDB, Express, Node, Stripe",
+    techUsed: ["MERN Stack", "MongoDB", "Express", "Node", "Stripe"],
     liveUrl: "https://zibooka-neon.vercel.app",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     description:
       "Movie search engine that lets users find movies and view details using React and JS, sorted by release year.",
     img: "/images/Search_movie.png",
-    techUsed: "JS, Node, Vite-React",
+    techUsed: ["JS", "Node", "Vite-React"],
     liveUrl: "https://bcot-code.github.io/js-final-proj/",
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     description:
       "Dictionary app using React and an API for searching word definitions.",
     img: "/images/dictionary.png",
-    techUsed: "React, HTML, CSS",
+    techUsed: ["React", "HTML", "CSS"],
     liveUrl: "https://brilliant-rabanadas-1beb76.netlify.app",
   },
 ];

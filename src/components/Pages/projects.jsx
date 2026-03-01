@@ -52,17 +52,18 @@ export default function Projects({ projects }) {
       {/* Inline styles for projects section */}
       <style>{`
         .projects-section {
-          padding: 3rem 1.5rem;
+          padding: 4rem 1.5rem;
           max-width: 1200px;
           margin: 0 auto;
         }
         
         .projects-title {
-          font-size: 2rem;
+          font-size: 2.5rem;
+          font-weight: 800;
           text-align: center;
-          margin-bottom: 3rem;
+          margin-bottom: 4rem;
           color: #fbbf24;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          letter-spacing: -0.025em;
         }
         
         .no-projects {
@@ -73,38 +74,36 @@ export default function Projects({ projects }) {
         
         .projects-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 2rem;
-          max-width: 1000px;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          gap: 2.5rem;
           margin: 0 auto;
         }
         
         .project-card {
-          background: #1a1a1a;
-          border: 1px solid #374151;
-          border-radius: 12px;
+          background: rgba(26, 26, 26, 0.8); /* Slight transparency */
+          backdrop-filter: blur(10px); /* Glass effect */
+          border: 1px solid rgba(251, 191, 36, 0.1); /* Subtle yellow border */
+          border-radius: 16px;
           overflow: hidden;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .project-card:hover {
-          transform: scale(1.03);
-          box-shadow: 0 10px 30px rgba(251, 191, 36, 0.2);
+          transform: translateY(-10px); /* Lift effect */
+          border-color: #fbbf24;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
         
         .project-image-container {
-          position: relative;
-          width: 100%;
-          height: 200px;
-          overflow: hidden;
+          height: 240px; /* Consistent height */
+          background: #2a2a2a; /* Fallback color for missing images */
         }
         
-        .project-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.3s ease;
+        /* This fixes the 'Broken Image' look while you wait for screenshots */
+        .project-image:not([src]), .project-image[src=""] {
+          display: none;
         }
         
         .project-card:hover .project-image {
@@ -122,6 +121,13 @@ export default function Projects({ projects }) {
           transition: opacity 0.3s ease;
         }
         
+        /* Responsive fix for mobile */
+        @media (max-width: 768px) {
+          .projects-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
         .project-card:hover .project-overlay {
           opacity: 1;
         }
@@ -143,7 +149,11 @@ export default function Projects({ projects }) {
         }
         
         .project-info {
-          padding: 1.5rem;
+          padding: 2rem;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
         }
         
         .project-name {
