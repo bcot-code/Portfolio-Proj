@@ -97,17 +97,17 @@ export default function Projects({ projects }) {
         }
         
         .project-image-container {
-          height: 240px; /* Consistent height */
-          background: #2a2a2a; /* Fallback color for missing images */
+          position: relative;
+          height: 240px;
+          overflow: hidden;
+          background: #2a2a2a;
         }
         
-        /* This fixes the 'Broken Image' look while you wait for screenshots */
-        .project-image:not([src]), .project-image[src=""] {
-          display: none;
-        }
-        
-        .project-card:hover .project-image {
-          transform: scale(1.05);
+        .project-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
         }
         
         .project-overlay {
