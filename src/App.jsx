@@ -1,192 +1,70 @@
-import React, { useState } from "react";
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Portfolio from "./components/portfolio";
+import { useState } from 'react';
 
-// Add icons to library
-library.add(faFacebookF, faTwitter, faInstagram, faGithub, faLinkedin);
+const projects = [
+  { number: '01', title: 'AI Mock Interview', category: 'AI · Full-stack application', image: '/images/AIMockupCLONE.png', description: 'An interview practice application exploring AI-generated questions, voice interactions, and user authentication. Built as a learning project and extended through hands-on implementation.', tags: ['Next.js', 'Firebase', 'Vapi', 'Gemini'], demo: 'https://ai-mock-interview-u54u.vercel.app/sign-in', featured: true },
+  { number: '02', title: 'Zibooka', category: 'Full-stack · E-commerce practice', image: '/images/ZibookaClone.png', description: 'A book-shopping application built to practice full-stack development, browsing experiences, and commerce workflows.', tags: ['MongoDB', 'Express', 'React', 'Node.js'], demo: 'https://zibooka-neon.vercel.app' },
+  { number: '03', title: 'Movie Search', category: 'Frontend · Search experience', image: '/images/Search_movie.png', description: 'A searchable movie interface for exploring film information, with a focus on practical JavaScript and UI development.', tags: ['JavaScript', 'React', 'Vite'], demo: 'https://bcot-code.github.io/js-final-proj/' },
+  { number: '04', title: 'Dictionary App', category: 'Frontend · API integration', image: '/images/dictionary.png', description: 'A dictionary interface that retrieves definitions from an API and presents them in an easy-to-use layout.', tags: ['React', 'CSS', 'API'], demo: 'https://brilliant-rabanadas-1beb76.netlify.app' },
+];
 
-function App() {
-  const [currentPage, setCurrentPage] = useState("Portfolio");
+const skills = ['React', 'Next.js', 'JavaScript', 'HTML & CSS', 'Firebase', 'REST APIs', 'Tailwind CSS', 'Git & GitHub'];
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case "About":
-        return <AboutPage />;
-      case "Contact":
-        return <ContactPage />;
-      default:
-        return <Portfolio />;
-    }
-  };
+function Arrow({ diagonal = false }) { return <span aria-hidden="true">{diagonal ? '↗' : '→'}</span>; }
 
+export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
   return (
-    <div className="app">
-      <nav className="nav-container">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a
-              href="#about"
-              onClick={(e) => {
-                e.preventDefault();
-                setCurrentPage("About");
-              }}
-              className={`nav-link ${currentPage === "About" ? "active" : ""}`}
-            >
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              href="#portfolio"
-              onClick={(e) => {
-                e.preventDefault();
-                setCurrentPage("Portfolio");
-              }}
-              className={`nav-link ${currentPage === "Portfolio" ? "active" : ""}`}
-            >
-              Portfolio
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                setCurrentPage("Contact");
-              }}
-              className={`nav-link ${currentPage === "Contact" ? "active" : ""}`}
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div className="site-shell">
+      <a className="skip-link" href="#main">Skip to content</a>
+      <header className="site-header">
+        <div className="container header-inner">
+          <a href="#home" className="wordmark" onClick={closeMenu} aria-label="Barbara, home">BC<span className="wordmark-dot">.</span></a>
+          <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? 'Close' : 'Menu'} <span aria-hidden="true">{menuOpen ? '×' : '+'}</span></button>
+          <nav id="primary-navigation" className={`navigation ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation">
+            <a href="#work" onClick={closeMenu}>Work</a>
+            <a href="#about" onClick={closeMenu}>About</a>
+            <a href="#contact" onClick={closeMenu}>Contact</a>
+            <a className="nav-resume" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <Arrow diagonal /></a>
+          </nav>
+        </div>
+      </header>
 
-      <main>{renderPage()}</main>
-    </div>
-  );
-}
-
-function AboutPage() {
-  return (
-    <div className="content-container">
-      <h1 className="section-title">About Me</h1>
-      <div className="about-section-content">
-        <div className="text-center">
-          <p>
-            I worked hard as a business administrator in a family business for
-            three years and as a personal assistant for five years. I felt I
-            needed to discover more of myself after going through many medical
-            career challenges. I realized I wanted to become a programmer,
-            despite the hardships and issues of the web language. The career
-            challenges that came with it were like solving a puzzle or making
-            art, but more less helping clients.
-            <br />
-            <br />
-            As a first time self-pace Full Stack Developer who worked on the
-            side with a few projects and learning to code through many bootcamps
-            (Freemote, Codeacademy, Youtube, and Shecodes) to becoming an
-            Software Developer / a Freelancer all at my own pace. Just making
-            my way through great bootcamp called UT Full Stack bootcamp and
-            grasping all of their projects all at once which helped me grow
-            more into the Developer I am today.
-            <br />
-            <br />
-            I'm a hard worker, fast learner, and strategic planner so that way
-            I can deliver high quality of solutions. It's always a great
-            opportunity to work with others with the same passion of making the
-            web fun and educational for the next generation of programmers.
-            Currently, seeking more opportunities at any chance given as a
-            self-taught Developer. Open to working remotely and with flexible
-            hours. Highly flexible in JS and React.
-          </p>
-          <br />
-          <div className="resume-link">
-            <a href="/src/resume/Resume_pdf.pdf" target="blank">
-              <FontAwesomeIcon icon={faGithub} /> Download Resume
-            </a>
+      <main id="main">
+        <section id="home" className="hero container" aria-labelledby="hero-title">
+          <div className="hero-copy">
+            <p className="eyebrow"><span className="status-dot" /> Front-end developer · Austin, TX</p>
+            <h1 id="hero-title">Thoughtful digital experiences, <em>built with purpose.</em></h1>
+            <p className="hero-description">Hi, I'm Barbara. I build responsive web applications with React, Next.js, and modern tools — and I'm especially curious about the possibilities of AI-powered products.</p>
+            <div className="hero-actions">
+              <a className="button button-dark" href="#work">Explore my work <Arrow /></a>
+              <a className="text-link" href="#contact">Let's connect <Arrow diagonal /></a>
+            </div>
           </div>
-        </div>
-      </div>
+          <div className="hero-photo-wrap"><img className="hero-photo" src="/images/self.png" alt="Portrait of Barbara" /><span className="photo-caption">Building, learning, creating. / 2026</span></div>
+          <div className="hero-bottom"><span>PORTFOLIO / SELECTED WORK</span><span>SCROLL TO EXPLORE ↓</span></div>
+        </section>
+
+        <section id="work" className="section work-section" aria-labelledby="work-title">
+          <div className="container">
+            <div className="section-heading"><div><p className="eyebrow">01 / Selected work</p><h2 id="work-title">Projects & explorations<span className="heading-period">.</span></h2></div><p className="section-intro">A selection of applications I've built while learning, experimenting, and developing my craft.</p></div>
+            <div className="project-grid">
+              {projects.map(project => <article className={`project-card ${project.featured ? 'project-featured' : ''}`} key={project.number}>
+                <a href={project.demo} className="project-visual" target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} live demo`}><img src={project.image} alt={`${project.title} application screenshot`} loading="lazy"/><span className="image-action" aria-hidden="true"><Arrow diagonal /></span></a>
+                <div className="project-meta"><span>{project.number} / {project.category}</span><span>PROJECT</span></div>
+                <div className="project-info"><div><h3>{project.title}</h3><p>{project.description}</p></div><a className="project-visit" href={project.demo} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} demo`}><Arrow diagonal /></a></div>
+                <div className="tag-list">{project.tags.map(tag => <span className="tag" key={tag}>{tag}</span>)}</div>
+              </article>)}
+            </div>
+            <p className="project-note">Some projects began as guided learning exercises. I share them to document my hands-on practice and growth.</p>
+          </div>
+        </section>
+
+        <section id="about" className="section about-section" aria-labelledby="about-title"><div className="container about-grid"><div><p className="eyebrow">02 / A little about me</p><h2 id="about-title">Curiosity is my <em>starting point.</em></h2></div><div className="about-copy"><p>My path into development began with a love of solving problems and creating things that people can actually use. After working in administrative and healthcare-related roles, I decided to pursue software development through self-study and a full-stack bootcamp.</p><p>Today I focus on front-end development, accessible interfaces, and exploring how AI can support more useful digital experiences. I'm continuing to grow through real projects, experimentation, and collaboration.</p><h3>Tools I work with</h3><div className="skills-list">{skills.map(skill => <span key={skill}>{skill}</span>)}</div><a className="text-link about-github" href="https://github.com/bcot-code" target="_blank" rel="noopener noreferrer">Explore my GitHub <Arrow diagonal /></a></div></div></section>
+
+        <section id="contact" className="section contact-section" aria-labelledby="contact-title"><div className="container contact-inner"><p className="eyebrow">03 / Get in touch</p><h2 id="contact-title">Have something in mind?<br/><em>Let's talk.</em></h2><p>I'm interested in connecting with teams, founders, and people building thoughtful products. I'd love to hear about your ideas or opportunities.</p><div className="contact-actions"><a className="button button-light" href="mailto:bcort49@gmail.com">Send me an email <Arrow diagonal /></a><a className="contact-social" href="https://www.linkedin.com/in/barbara-c-874a46214" target="_blank" rel="noopener noreferrer">LinkedIn <Arrow diagonal /></a><a className="contact-social" href="https://github.com/bcot-code" target="_blank" rel="noopener noreferrer">GitHub <Arrow diagonal /></a></div></div></section>
+      </main>
+      <footer className="site-footer"><div className="container footer-inner"><span>© {new Date().getFullYear()} Barbara C.</span><span>Designed & built with care.</span><a href="#home">Back to top ↑</a></div></footer>
     </div>
   );
 }
-
-function ContactPage() {
-  return (
-    <div className="contact-container">
-      <h1 className="contact-title">Leave a DM with me</h1>
-      <div className="contact-form-row">
-        <div className="col-md-8">
-          <form
-            action="https://formspree.io/f/mwkalajy"
-            method="POST"
-            className="contact-form"
-          >
-            <div className="form-group">
-              <label className="form-label">Your email:</label>
-              <input
-                type="email"
-                name="_replyto"
-                className="form-input"
-                required
-                autoFocus
-              />
-            </div>
-            <div className="form-group">
-              <label className="form-label">Your message:</label>
-              <textarea
-                name="message"
-                className="form-textarea"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" className="btn-submit">
-              Send
-            </button>
-          </form>
-        </div>
-        <div className="contact-buttons">
-          <a href="mailto:bcort49@gmail.com" className="contact-link">
-            <button className="btn-contact">Email</button>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/barbara-c-874a46214"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-link"
-          >
-            <button className="btn-contact">LinkedIn</button>
-          </a>
-        </div>
-      </div>
-      <footer className="contact-footer">
-        <div className="contact_box">
-          <h4>Let's work together</h4>
-        </div>
-        <br />
-        <div>
-          <a
-            href="https://github.com/bcot-code"
-            target="_blank"
-            className="github_link"
-            rel="noreferrer"
-          >
-            ~Tap to Github~
-          </a>
-        </div>
-      </footer>
-    </div>
-  );
-}
-
-export default App;
-
